@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gym Membership | DCU Fitness Hub</title>
+
+<meta name="description" content="Become a member of DCU Fitness Hub and enjoy access to modern gym equipment, fitness classes and personalised tools like our BMI calculator.">
+
+<meta name="keywords" content="gym membership Dublin, student gym membership, DCU fitness membership, gym sign up">
+
+<meta name="author" content="DCU Fitness Hub">
+
+<link rel="stylesheet" href="css/Gym_CSS.css">
+
+</head>
+
+<body>
+
+<header>
+    <h1>DCU Fitness Hub</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="classes.html">Classes</a>
+	<a href="membership.html">Membership</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main class="hero-membership">
+	<section class="membership-intro">
+		<h2>Join Our Gym</h2>
+		<p>Become part of the DCU Fitness Hub community. Calculate your BMI, choose your goals, based on your BMI results and sign up for membership!</p>
+	</section>
+	
+	<div class="section-divider"></div>
+
+	<section class="bmi-section">
+		<h2>BMI Calculator</h2>
+
+		<label>Height (cm):</label>
+		<input type="number" id="height">
+
+		<label>Weight (kg):</label>
+		<input type="number" id="weight">
+
+		<button onclick="calculateBMI()">Calculate BMI</button>
+
+		<p id="bmi-result"></p>
+	</section>
+	
+	<div class="section-divider"></div>
+
+	<section class="signup-section">
+		<h2>Membership Sign Up</h2>
+
+		<form id="signup-form">
+
+			<label>Full Name:</label>
+			<input type="text" id="name" required>
+
+			<label>Email:</label>
+			<input type="email" id="email" required>
+
+			<label>Age:</label>
+			<input type="number" id="age" required>
+
+			<label>Fitness Goal:</label>
+			<select id="goal">
+				<option>Weight Loss</option>
+				<option>Strength</option>
+				<option>General Fitness</option>
+			</select>
+
+			<button type="submit">Sign Up</button>
+
+		</form>
+
+		<p id="form-message"></p>
+	</section>
+	
+	<div class="section-divider"></div>
+
+	<section class="faq-section">
+		<h2>Frequently Asked Questions</h2>
+
+		<div class="faq-item">
+			<h3 onclick="toggleFAQ(this)">Do I need to book classes in advance? ▼</h3>
+			<p class="faq-answer">Yes, we recommend booking classes online to secure your spot.</p>
+		</div>
+
+		<div class="faq-item">
+			<h3 onclick="toggleFAQ(this)">Are there student discounts? ▼</h3>
+			<p class="faq-answer">Yes, DCU students receive a 20% discount on memberships.</p>
+		</div>
+
+		<div class="faq-item">
+			<h3 onclick="toggleFAQ(this)">Can beginners join? ▼</h3>
+			<p class="faq-answer">Absolutely! Our trainers will help you start safely.</p>
+		</div>
+	</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 DCU Fitness Hub</p>
+</footer>
+
+<script src="JS/script.js"></script>
+
+</body>
+</html>

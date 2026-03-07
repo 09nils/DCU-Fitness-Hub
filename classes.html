@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fitness Classes | DCU Fitness Hub</title>
+
+<meta name="description" content="Discover our weekly fitness classes at DCU Fitness Hub including HIIT, yoga, spin training and strength workouts.">
+
+<meta name="keywords" content="fitness classes Dublin, HIIT class, yoga class, spin training, gym classes DCU">
+
+<meta name="author" content="DCU Fitness Hub">
+
+<link rel="stylesheet" href="css/Gym_CSS.css">
+
+</head>
+
+<body>
+
+<header>
+    <h1>DCU Fitness Hub</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="classes.html">Classes</a>
+	<a href="membership.html">Membership</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main class="hero-classes-page">
+
+    <section class="classes-main-section">
+        <h2>Our Classes</h2>
+
+        <table class="schedule-table">
+            <caption>Weekly Class Schedule (3pm–7pm)</caption>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+
+            <tr>
+                <th>3:00-4:00</th>
+                <td>HIIT</td>
+                <td>Yoga</td>
+                <td>Strength</td>
+                <td>Spin</td>
+                <td>Pilates</td>
+            </tr>
+
+            <tr>
+                <th>4:00-5:00</th>
+                <td>Strength</td>
+                <td>Core</td>
+                <td>HIIT</td>
+                <td>Yoga</td>
+                <td>Box Fit</td>
+            </tr>
+
+            <tr>
+                <th>5:00-6:00</th>
+                <td>Spin</td>
+                <td>HIIT</td>
+                <td>Yoga</td>
+                <td>Strength</td>
+                <td>Stretch</td>
+            </tr>
+
+            <tr>
+                <th>6:00-7:00</th>
+                <td>Pilates</td>
+                <td>Spin</td>
+                <td>Core</td>
+                <td>Box Fit</td>
+                <td>HIIT</td>
+            </tr>
+        </table>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="workout-api-section">
+        <h2>Get a Workout Suggestion</h2>
+        <p>Select your fitness goal and receive a suggested workout.</p>
+
+        <label for="workout-type">Choose your goal:</label>
+        <select id="workout-type">
+            <option value="strength">Strength</option>
+            <option value="cardio">Cardio</option>
+            <option value="flexibility">Flexibility</option>
+        </select>
+
+        <button onclick="getWorkoutSuggestion()">Get Suggestion</button>
+
+        <div id="workout-result"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 DCU Fitness Hub</p>
+</footer>
+
+<script src="JS/script.js"></script>
+
+</body>
+</html>
